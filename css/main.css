@@ -1,13 +1,13 @@
- body{
+body{
  	font-family: 'Roboto', sans-serif;
- }
- .line{
+}
+.line{
  	 width:5%; 
  	 height:2px; 
  	 background: whitesmoke;
  	 display: inline-block;
  	 margin-bottom: 3px;
- }
+}
 .profile-text{
 	
 	margin: 0 auto;
@@ -17,8 +17,10 @@
 	text-align: center;
 	color: whitesmoke;
 }
-.shrink{
+.navBar.shrink{
 	min-height: 35px;
+	height: 70px;
+	padding: 4px;
 }
 .navBar{
  	background-color: #2C3E50;
@@ -26,30 +28,26 @@
 	position: fixed;
 	padding-top: 10px;
 	padding-bottom: 10px;
-
-  
-   -webkit-transition: all 0.4s ease;
-   transition: all 0.4s ease;
- }
+}
 
 .navBar h1{
  	float: left;
  	color: whitesmoke;
- }
+}
 .menu{
  	float: right;
- }
+}
 .menu a{
  	color: whitesmoke;
- }
+}
 
 /*******header*********/
 .headers{
 	background-color: #18BC9C;
 	width: 100%;
-align-content: center;
+	align-content: center;
 }
- .headers h1{
+.headers h1{
 	text-align: center;
 	color: whitesmoke;
 }
@@ -58,8 +56,6 @@ img.profile{
 	height: 256px;
 	margin: 0 auto;
 }
-
-
 .about{
 	background-color: #18BC9C;
 }
