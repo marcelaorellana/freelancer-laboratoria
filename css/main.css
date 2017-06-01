@@ -1,15 +1,10 @@
 body{
  	font-family: 'Roboto', sans-serif;
 }
-.line{
- 	 width:5%; 
- 	 height:2px; 
- 	 background: whitesmoke;
- 	 display: inline-block;
- 	 margin-bottom: 3px;
-}
-.profile-text{
-	
+
+
+
+.profile-text{	
 	margin: 0 auto;
 	color: whitesmoke;
 }
@@ -45,6 +40,7 @@ body{
 .headers{
 	background-color: #18BC9C;
 	width: 100%;
+	padding-top: 80px;
 	align-content: center;
 }
 .headers h1{
@@ -59,6 +55,17 @@ img.profile{
 .about{
 	background-color: #18BC9C;
 }
+.line{
+ 	 width:50px; 
+ 	 height:2px; 
+ 	 background: whitesmoke;
+ 	 display: inline-block;
+ 	 margin-bottom: 3px;
+}
+.deco{
+	margin: 5px 45%;
+}
+
 /*****about********/
 .about{
 	color: whitesmoke;
@@ -98,9 +105,10 @@ input{
 
 /******footer********/
 footer{
-	background-color: gray;
+	background-color: #424744;
+	color: whitesmoke;
 }
 i{
 	size: 20px;
-	color: pink;
+	color: whitesmoke;
 }
