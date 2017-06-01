@@ -83,6 +83,7 @@ img.profile{
 .portafolio{
 	color: #2C3E50;
 	text-align: center;
+
 }
 .portafolio h1{
 	color: #2C3E50;
@@ -124,7 +125,7 @@ img.profile{
 }
 
 .grid:hover .overlay {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .grid i {
   color: whitesmoke;
