@@ -1,3 +1,4 @@
+//funcionalidad del scroll del navBar
 
 var navi = document.getElementById("navegadorId");
 
@@ -10,8 +11,9 @@ window.addEventListener("scroll", function(){
   }
 });
 
+// funcion del modal
 (function main(){
-	var boxes = Array.from(document.getElementsByClassName("col-4"));
+	var boxes = Array.from(document.getElementsByClassName("grid"));
 	var modal = document.getElementById("modalId");
 	var bodyModal, close, img;
 
@@ -40,6 +42,28 @@ window.addEventListener("scroll", function(){
 
 //Validacion de inputs
 
+//creación del espacio para el mensaje de error para cada input
+var errorNombre = document.createElement("p");
+errorNombre.classList.add("hide");
+document.getElementById("nameX").appendChild(errorNombre);
+errorNombre.innerHTML = "Nombre Invalido";
+
+var errorEmail = document.createElement("p");
+errorEmail.classList.add("hide");
+document.getElementById("emailX").appendChild(errorEmail);
+errorEmail.innerHTML = "Email Invalido";
+
+var errorTelefono = document.createElement("p");
+errorTelefono.classList.add("hide");
+document.getElementById("phoneX").appendChild(errorTelefono);
+errorTelefono.innerHTML = "Teléfono Invalido";
+
+var errorMensaje = document.createElement("p");
+errorMensaje.classList.add("hide");
+document.getElementById("messageX").appendChild(errorMensaje);
+errorMensaje.innerHTML = "Mensaje Invalido";
+
+
 document.getElementById("sendId").addEventListener("click", function(val){
 	var nombre = document.getElementById("nameId").value;
 	var email = document.getElementById("emailId").value;
@@ -47,19 +71,32 @@ document.getElementById("sendId").addEventListener("click", function(val){
 	var mensaje = document.getElementById("messageId").value;
 
 	val.preventDefault()
-	
+		
+
 		if(nombre.charAt(0) != nombre.charAt(0).toUpperCase() || nombre == ""){
-			alert("Nombre con mayúscula");
+			errorNombre.classList.remove("hide");
+		}else{
+			errorNombre.classList.add("hide");	
 		}
-		else if(email.indexOf("@") == -1){
-			alert("eMail incorrecto");
+
+		if(email.indexOf("@") == -1){
+			errorEmail.classList.remove("hide");
+		}else{
+			errorEmail.classList.add("hide");
 		}
-		else if(telefono == "" || isNaN(telefono)){
-			alert("Teléfono no valido");
+
+		if(telefono == "" || isNaN(telefono)){
+			errorTelefono.classList.remove("hide");
+		}else{
+			errorTelefono.classList.add("hide");
 		}
-		else if(mensaje.length > 100 || mensaje == ""){
-			alert("Mensaje no puede ser vacio ni tener más de 100 caracteres");
+
+		if(mensaje.length > 100 || mensaje == ""){
+			errorMensaje.classList.remove("hide");
+		}else{
+			errorMensaje.classList.add("hide");
 		}
+
 		 
 	 return true;	
 });

@@ -2,7 +2,6 @@ body{
  	font-family: 'Montserrat', sans-serif;
 }
  
-
 .profile-text{	
 	margin: 0 auto;
 	color: whitesmoke;
@@ -56,7 +55,7 @@ body{
 	text-align: center;
 	color: whitesmoke;
 	font-weight: 600;
-	font-size: 30px;
+	font-size: 65px;
 }
 img.profile{
 	width: 256px;
@@ -68,15 +67,17 @@ img.profile{
 	background-color: #18BC9C;
 }
 .headers .line{
- 	 width:50px; 
- 	 height:2px; 
+ 	 width:60px; 
+ 	 height:4px; 
  	 background: whitesmoke;
  	 display: inline-block;
- 	 margin-bottom: 3px;
+ 	 margin-bottom: 4px;
 }
-.headers .deco{
-	margin: 5px 45%;
-	margin: 20px;
+.headers i{
+	width: 30px;
+    height: 30px;
+	color: whitesmoke; 
+	font-size: 25px;
 }
 /******portafolio**********/
 .portafolio{
@@ -86,23 +87,21 @@ img.profile{
 .portafolio h1{
 	color: #2C3E50;
 	text-align: center;
-	font-size: 30px;
+	font-size: 35px;
+	padding-top: 20px;
 }
 .portafolio .line{
- 	 width:50px; 
- 	 height:2px; 
+ 	 width:60px; 
+ 	 height:4px; 
  	 background: #2C3E50;
  	 display: inline-block;
- 	 margin-bottom: 3px;
-}
-.portafolio .deco{
-	margin: 5px 45%;
-	color: #2C3E50;
-	margin: 20px;
+ 	 margin-bottom: 4px;
 }
 .portafolio i{
-	size: 20px;
+	width: 30px;
+    height: 30px;
 	color: #2C3E50;
+	font-size: 25px;
 }
 .hide{
   display: none;
@@ -132,7 +131,7 @@ img.profile{
 }
 .about h1{
 	text-align: center;
-	font-size: 30px;
+	font-size: 35px;
 }
 .about button {
     background-color: #18BC9C; 
@@ -153,20 +152,21 @@ img.profile{
    
 }
 .about .line{
- 	 width:50px; 
- 	 height:2px; 
+ 	 width:60px; 
+ 	 height:4px; 
  	 background: whitesmoke; 
  	 display: inline-block;
- 	 margin-bottom: 3px;
-}
-.about .deco{
-	margin: 5px 45%;
-	color: whitesmoke; 
-	margin: 20px;
+ 	 margin-bottom: 4px;
 }
 .about i{
-	size: 20px;
+	width: 30px;
+    height: 30px;
 	color: whitesmoke; 
+	font-size: 25px;
+}
+.about p{
+	padding: 10px 30px;
+	text-align: left;
 }
 
 /******contact me********/
@@ -188,7 +188,7 @@ input::-webkit-input-placeholder {
 }
 .contact h1{
 	text-align: center;
-	font-size: 30px;
+	font-size: 35px;
 }
 .contact button{
 	background-color: #18BC9C; 
@@ -203,28 +203,39 @@ input::-webkit-input-placeholder {
 
 }
 .contact .line{
- 	 width:50px; 
- 	 height:2px; 
+ 	 width:60px; 
+ 	 height:4px; 
  	 background: #2C3E50;
  	 display: inline-block;
- 	 margin-bottom: 3px;
-}
-.contact .deco{
-	margin: 5px 45%;
-	color: #2C3E50;
-	margin: 20px;
+ 	 margin-bottom: 4px;
 }
 .contact i{
-	size: 20px;
+	width: 30px;
+    height: 30px;
+    font-size: 25px;
 	color: #2C3E50;
 }
 
 /******footer********/
 footer{
-	background-color: #424744;
+	background-color: #2C3E50;
 	color: whitesmoke;
+	text-align: center;
+	padding: 0;
 }
 footer i{
 	size: 20px;
 	color: whitesmoke;
+	padding: 5px;
+}
+footer h2{
+	padding: 20px 0;
+}
+footer a{
+	color: #18BC9C;
+}
+.final{
+	background-color: #1a2430;
+	padding: 15px;
+	margin-top: 40px;
 }
