@@ -174,7 +174,13 @@ input{
 	width: 70%;
 	margin: 0 auto; 
 	border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #a9adac;
+    padding: 10px;
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 2;
 }
 .contact{
 	text-align: center;
@@ -190,10 +196,11 @@ input{
     border-radius: 5px;
     color: white;
     padding: 10px 10px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+
 }
 .contact .line{
  	 width:50px; 

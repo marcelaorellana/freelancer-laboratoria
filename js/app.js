@@ -37,3 +37,29 @@ window.addEventListener("scroll", function(){
 		});		
 	});
 })();
+
+//Validacion de inputs
+
+document.getElementById("sendId").addEventListener("click", function(val){
+	var nombre = document.getElementById("nameId").value;
+	var email = document.getElementById("emailId").value;
+	var telefono = document.getElementById("phoneId").value;
+	var mensaje = document.getElementById("messageId").value;
+
+	val.preventDefault()
+	
+		if(nombre.charAt(0) != nombre.charAt(0).toUpperCase() || nombre == ""){
+			alert("Nombre con mayúscula");
+		}
+		else if(email.indexOf("@") == -1){
+			alert("eMail incorrecto");
+		}
+		else if(telefono == "" || isNaN(telefono)){
+			alert("Teléfono no valido");
+		}
+		else if(mensaje.length > 100 || mensaje == ""){
+			alert("Mensaje no puede ser vacio ni tener más de 100 caracteres");
+		}
+		 
+	 return true;	
+});
