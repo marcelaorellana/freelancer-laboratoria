@@ -1,3 +1,82 @@
-/*
- * Estilos de tu proyecto
- */
+ body{
+ 	font-family: 'Roboto', sans-serif;
+ }
+ .line{
+ 	 width:5%; 
+ 	 height:2px; 
+ 	 background: whitesmoke;
+ 	 display: inline-block;
+ 	 margin-bottom: 3px;
+ }
+.profile-text{
+	
+	margin: 0 auto;
+	color: whitesmoke;
+}
+.profile-text p{
+	text-align: center;
+	color: whitesmoke;
+}
+.navBar{
+ 	background-color: #2C3E50;
+ 	overflow: auto;
+	position: fixed;
+	padding-top: 10px;
+	padding-bottom: 10px;
+ }
+ .navBar h1{
+ 	float: left;
+ 	color: whitesmoke;
+ }
+ .menu{
+ 	float: right;
+ }
+ .menu a{
+ 	color: whitesmoke;
+ }
+/*******header*********/
+.headers{
+	background-color: #18BC9C;
+	width: 100%;
+align-content: center;
+}
+ .headers h1{
+	text-align: center;
+	color: whitesmoke;
+}
+img.profile{
+	width: 256px;
+	height: 256px;
+	margin: 0 auto;
+}
+
+
+.about{
+	background-color: #18BC9C;
+}
+/*****about********/
+.about{
+	color: whitesmoke;
+}
+.about h1{
+	text-align: center;
+}
+.about button {
+    background-color: #18BC9C; /* Green */
+    border: 2px solid whitesmoke; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/******footer********/
+footer{
+	background-color: gray;
+}
+i{
+	size: 20px;
+	color: pink;
+}
