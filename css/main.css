@@ -106,6 +106,36 @@ img.profile{
 .hide{
   display: none;
 }
+.grid{
+	position: relative;
+	overflow: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #18BC9C;
+  padding: 12px;
+}
+
+.grid:hover .overlay {
+  opacity: 0.7;
+}
+.grid i {
+  color: whitesmoke;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 #modalId{
   background-color: #2C3E50;
   width: 100%;
@@ -138,18 +168,23 @@ img.profile{
     border: 2px solid whitesmoke; 
     border-radius: 10px;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
+}
+.about button i{
+	font-size: 20px;
 }
 .about button:hover {
     background-color: whitesmoke; 
     border: 2px solid #18BC9C; 
     color: #18BC9C;
-    padding: 15px 32px;
-   
+    padding: 10px 32px;  
+}
+.about button i:hover{
+	color: #18BC9C;
 }
 .about .line{
  	 width:60px; 
@@ -200,6 +235,7 @@ input::-webkit-input-placeholder {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    left: 10px;
 
 }
 .contact .line{

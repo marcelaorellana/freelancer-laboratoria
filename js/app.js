@@ -41,7 +41,7 @@ window.addEventListener("scroll", function(){
 })();
 
 //Validacion de inputs
-
+(function validar(){
 //creación del espacio para el mensaje de error para cada input
 var errorNombre = document.createElement("p");
 errorNombre.classList.add("hide");
@@ -100,3 +100,5 @@ document.getElementById("sendId").addEventListener("click", function(val){
 		 
 	 return true;	
 });
+
+})();
