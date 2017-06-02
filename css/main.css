@@ -10,6 +10,7 @@ body{
 	text-align: center;
 	color: whitesmoke;
 }
+/*********************Nav Bar***********/
 .navBar.shrink{
 	min-height: 50px;
 	height: 60px;
@@ -21,8 +22,8 @@ body{
 	position: fixed;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	z-index: 1;
 }
-
 .navBar h1{
  	float: left;
  	color: whitesmoke;
@@ -40,10 +41,9 @@ body{
 .menu a:hover{
 	background-color: #18BC9C;
 	color: whitesmoke;
-
 }
 
-/*******header*********/
+/***************************header*********/
 .headers{
 	background-color: #18BC9C;
 	width: 100%;
@@ -79,11 +79,11 @@ img.profile{
 	color: whitesmoke; 
 	font-size: 25px;
 }
-/******portafolio**********/
+
+/***********************portafolio**********/
 .portafolio{
 	color: #2C3E50;
 	text-align: center;
-
 }
 .portafolio h1{
 	color: #2C3E50;
@@ -92,11 +92,11 @@ img.profile{
 	padding-top: 20px;
 }
 .portafolio .line{
- 	 width:60px; 
- 	 height:4px; 
- 	 background: #2C3E50;
- 	 display: inline-block;
- 	 margin-bottom: 4px;
+ 	width:60px; 
+ 	height:4px; 
+ 	background: #2C3E50;
+ 	display: inline-block;
+ 	margin-bottom: 4px;
 }
 .portafolio i{
 	width: 30px;
@@ -105,7 +105,7 @@ img.profile{
 	font-size: 25px;
 }
 .hide{
-  display: none;
+  	display: none;
 }
 .grid{
 	position: relative;
@@ -113,49 +113,52 @@ img.profile{
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #18BC9C;
-  padding: 12px;
+  	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #18BC9C;
+	padding: 12px;
+	border: 12px solid whitesmoke;
 }
 
 .grid:hover .overlay {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 .grid i {
-  color: whitesmoke;
-  font-size: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
+/**********************************Modal***********/
 #modalId{
-  background-color: #2C3E50;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+    background-color: #2C3E50;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 #modalId .close{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  color: pink;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: pink;
 }
 .close img{
-  width: 50px;
+    width: 50px;
 }
-/*****about********/
+/************************about**************/
 .about{
 	color: whitesmoke;
 	text-align: center;
@@ -188,11 +191,11 @@ img.profile{
 	color: #18BC9C;
 }
 .about .line{
- 	 width:60px; 
- 	 height:4px; 
- 	 background: whitesmoke; 
- 	 display: inline-block;
- 	 margin-bottom: 4px;
+ 	width:60px; 
+ 	height:4px; 
+ 	background: whitesmoke; 
+ 	display: inline-block;
+ 	margin-bottom: 4px;
 }
 .about i{
 	width: 30px;
@@ -205,7 +208,7 @@ img.profile{
 	text-align: left;
 }
 
-/******contact me********/
+/*************************contact me*************/
 input{
 	width: 70%;
 	margin: 0 auto; 
@@ -232,19 +235,18 @@ input::-webkit-input-placeholder {
     border-radius: 5px;
     color: white;
     padding: 10px 10px;
-    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    text-align: left;
     left: 10px;
-
 }
 .contact .line{
- 	 width:60px; 
- 	 height:4px; 
- 	 background: #2C3E50;
- 	 display: inline-block;
- 	 margin-bottom: 4px;
+ 	width:60px; 
+ 	height:4px; 
+ 	background: #2C3E50;
+ 	display: inline-block;
+ 	margin-bottom: 4px;
 }
 .contact i{
 	width: 30px;
@@ -253,7 +255,7 @@ input::-webkit-input-placeholder {
 	color: #2C3E50;
 }
 
-/******footer********/
+/******************************footer*************/
 footer{
 	background-color: #2C3E50;
 	color: whitesmoke;
